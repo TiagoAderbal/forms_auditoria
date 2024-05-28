@@ -1,0 +1,71 @@
+:root {
+    --grey-light: #CDD4DC !important;
+    --grey: #A5A5A5 !important;
+    --black: #201E1E !important;
+    --blue: #033D60 !important;
+    --white: #fff !important;
+    --green-light: #98CDBD !important;
+    --green: #5DB196 !important;
+}
+
+body {
+    background-color: var(--grey-light) !important;
+}
+
+.principal {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+.area-texto {
+    padding: 7% 20% 5% 20%;
+}
+
+.texto {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.area-links {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-gap: 3rem;
+    padding: 0 5rem 5% 5rem;
+}
+
+.link {
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 35px;
+}
+
+.link:hover {
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--blue);
+    padding: 15px;
+    border-radius: 35px;
+}
+
+@media (max-width: 750px) {
+    
+    .area-links {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .link {
+        margin-top: 1.5rem;
+    }
+
+    .texto {
+        padding-top: 4rem;
+        font-size: 2rem;
+    }
+}
